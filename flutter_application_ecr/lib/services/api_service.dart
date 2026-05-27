@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'session_service.dart';
 
 class ApiService {
-  static const String baseUrl = 'https://backend-proyect-fb60.onrender.com';
+  static const String baseUrl = 'http://backend-proyect-fb60.onrender.com';
 
   static Future<Map<String, String>> _authHeaders() async {
     final session = await SessionService.getSession();
